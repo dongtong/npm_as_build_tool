@@ -1,0 +1,20 @@
+{
+  "name": "npm_as_build_tool",
+  "version": "1.0.0",
+  "description": "Use npm package as building tool in node application",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test -u bdd -R spec",
+    "start": "echo \"Starting app...\"",
+    "stop": "echo \"Stop app...\"",
+    "restart": "echo \"Restart app...\"",
+    "start:dev": "echo \"Running start:dev script\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "should": "^9.0.0"
+  }
+}
