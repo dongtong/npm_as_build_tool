@@ -4,11 +4,17 @@
   "description": "Use npm package as building tool in node application",
   "main": "index.js",
   "scripts": {
+    "pretest": "npm run lint",
     "test": "mocha test -u bdd -R spec",
+    "posttest": "echo 'after test is running...'",
     "start": "node index.js",
     "stop": "echo \"Stop app...\"",
     "restart": "echo \"Restart app...\"",
-    "start:dev": "node index.js 4000"
+    "start:dev": "node index.js 4000",
+    "pregreet": "echo 'Before greet'",
+    "greet": "echo 'Hello foobar'",
+    "postgreet": "echo 'After greet'",
+    "lint": "jshint *.js **/*.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +22,7 @@
     "koa": "^1.2.0"
   },
   "devDependencies": {
+    "jshint": "^2.9.2",
     "mocha": "^2.5.3",
     "should": "^9.0.0",
     "supertest": "^1.2.0"

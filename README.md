@@ -9,5 +9,28 @@
     $ npm run-script test
     $ npm run test
     $ npm test
+    $ npm tst
     $ npm t
+
+Run npm script in silent mode
+
+    $ npm test -s
+
+
+### Run script pre- and post-
+
+    $ npm run pretest
+    $ npm test -s
+
+customize hooks
+
+    $ npm run greet -s
+
+
+Run npm script sequence as following:
+
+    prescriptname -> scriptname -> postscriptname
+
+
+
 
