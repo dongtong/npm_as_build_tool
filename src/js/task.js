@@ -5,6 +5,6 @@ function Task(title, weight) {
 
 Task.prototype.toString = function () {
 	return "Title: " + this.title + " - weight: " + this.weight;
-}
+};
 
 module.exports = Task;

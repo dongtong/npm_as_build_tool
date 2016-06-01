@@ -59,6 +59,10 @@ The left operation result will be the right command first parameter
 
 3. >
 
+4. --
+
+It could allow to pass argument throught underline commander
+
 The left operation result will be writen to right destination file.
 
 ### NPM Commander
@@ -98,6 +102,12 @@ The | left commander output as second command first parameter
 3. run "npm run compile:less" and related hooks script
 
 4. run npm run build:bundle and related hooks script
+
+### watch
+
+- client watch(watch, watchify)
+
+- server watch(nodemon)
 
 
 
