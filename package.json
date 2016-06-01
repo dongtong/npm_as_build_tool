@@ -19,7 +19,10 @@
     "precompile": "npm run clean",
     "compile": "babel ./src/js --out-dir ./lib",
     "compile:less": "lessc ./src/less/main.less ./public/css/main.css",
-    "build:bundle": "browserify ./src/app.js | uglifyjs -mc > ./public/js/bundle.min.js"
+    "build:bundle": "browserify ./src/app.js | uglifyjs -mc > ./public/js/bundle.min.js",
+    "build:clean": "rimraf public/css/* public/js/*",
+    "prebuild": "npm run build:clean",
+    "build": "npm run compile:less && npm run build:bundle"
   },
   "author": "",
   "license": "ISC",
