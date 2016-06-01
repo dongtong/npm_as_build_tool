@@ -61,6 +61,16 @@ The left operation result will be the right command first parameter
 
 The left operation result will be writen to right destination file.
 
+### NPM Commander
+
+1. npm --help
+
+To see all of avaiable npm commanders
+
+2. npm run
+
+To check which script command you could use
+
 
 ### pipeline
 
