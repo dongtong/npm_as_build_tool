@@ -1,6 +1,6 @@
 {
   "name": "npm_as_build_tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use npm package as building tool in node application",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "browserSync": "npm run watch:bundle2 & browser-sync start --config bs-config.js",
     "version:major": "npm version major",
     "version:minor": "npm version minor",
-    "version:patch": "npm run-script version:patch"
+    "version:patch": "npm version patch -f"
   },
   "author": "",
   "license": "ISC",
