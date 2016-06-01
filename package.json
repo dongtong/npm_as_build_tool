@@ -19,7 +19,7 @@
     "precompile": "npm run clean",
     "compile": "babel ./src/js --out-dir ./lib",
     "compile:less": "lessc ./src/less/main.less ./public/css/main.css",
-    "build:bundle": "browserify ./src/app.js -o ./public/js/bundle.js"
+    "build:bundle": "browserify ./src/app.js | uglifyjs -mc > ./public/js/bundle.min.js"
   },
   "author": "",
   "license": "ISC",
@@ -38,6 +38,7 @@
     "mocha": "^2.5.3",
     "rimraf": "^2.5.2",
     "should": "^9.0.0",
-    "supertest": "^1.2.0"
+    "supertest": "^1.2.0",
+    "uglify-js": "^2.6.2"
   }
 }

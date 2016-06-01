@@ -47,6 +47,19 @@ For windows platform, we could use rimraf package
 
     $ npm install rimraf --save-dev
 
+### pipeline
+
+Before script
+
+    "build:bundle": "browserify ./src/app.js -o ./public/js/bundle.js",
+    "build:uglify": "uglifyjs ./src/app.js -mc -o ./public/js/bundle.min.js"
+
+After pipeline
+
+    "build:bundle": "browserify ./src/app.js | uglifyjs -mc > ./public/js/bundle.js"
+
+The | left commander output as second command first parameter
+
 
 
 
