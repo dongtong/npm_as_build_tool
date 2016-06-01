@@ -139,9 +139,15 @@ This will change package.json version value.
 
 Check current version or check differencs
 
+    $ git remote -v
     $ git tag
     $ git show v1.0.1
 
+### Deploy to cloud
+
+- heroku
+- aws
+- azure
 
 
 
