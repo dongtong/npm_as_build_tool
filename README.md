@@ -60,6 +60,20 @@ After pipeline
 
 The | left commander output as second command first parameter
 
+### build script procedure
+
+    "build:clean": "rimraf public/css/* public/js/*",
+    "prebuild": "npm run build:clean",
+    "build": "npm run compile:less && npm run build:bundle"
+
+1. run "prebuild": "npm run build:clean"
+
+2. run "rimraf public/css/* public/js/*"
+
+3. run "npm run compile:less" and related hooks script
+
+4. run npm run build:bundle and related hooks script
+
 
 
 
