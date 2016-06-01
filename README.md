@@ -135,6 +135,13 @@ Then add script task.
 
 This will change package.json version value.
 
+### Git tag
+
+Check current version or check differencs
+
+    $ git tag
+    $ git show v1.0.1
+
 
 
 

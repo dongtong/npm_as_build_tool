@@ -31,7 +31,8 @@
     "browserSync": "npm run watch:bundle2 & browser-sync start --config bs-config.js",
     "version:major": "npm version major -f",
     "version:minor": "npm version minor -f",
-    "version:patch": "npm version patch -f"
+    "version:patch": "npm version patch -f",
+    "push:origin": "git push --tags origin HEAD:master"
   },
   "author": "",
   "license": "ISC",
