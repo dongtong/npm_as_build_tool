@@ -32,7 +32,9 @@
     "version:major": "npm version major -f",
     "version:minor": "npm version minor -f",
     "version:patch": "npm version patch -f",
-    "push:origin": "git push --tags origin HEAD:master"
+    "push:origin": "git push --tags origin HEAD:master",
+    "launch:prod": "open https://yourherokuurl.com",
+    "launch:prod:windows": "start https://yourherokuurl.com"
   },
   "author": "",
   "license": "ISC",
