@@ -47,6 +47,21 @@ For windows platform, we could use rimraf package
 
     $ npm install rimraf --save-dev
 
+### NPM operators
+
+1. && 
+
+If the left operation failed, the right operation will not run
+
+2. |
+
+The left operation result will be the right command first parameter
+
+3. >
+
+The left operation result will be writen to right destination file.
+
+
 ### pipeline
 
 Before script
