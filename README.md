@@ -1,5 +1,11 @@
 ## NPM As Build Tool
 
+### Development progress
+
+
+    compile/transform -> bundle -> optimize -> test -> deploy
+
+
 ### Why use npm as build tool
 
  - [npm vs gulp](https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8#.2r5thdmby)
@@ -108,6 +114,28 @@ The | left commander output as second command first parameter
 - client watch(watch, watchify)
 
 - server watch(nodemon)
+
+### Version migration
+
+The common version follows [semver.org](http://semver.org)
+
+    Major.Minor.Patch
+
+But we could remember as following:
+
+    Breaking.Feature.Bugfix
+
+How to migration version?, firstly, you could check help info
+
+    $ npm version --help
+
+Then add script task.
+
+    $ npm run version:patch
+
+This will change package.json version value.
+
+
 
 
 

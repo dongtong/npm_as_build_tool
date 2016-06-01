@@ -28,7 +28,10 @@
     "watch:server": "nodemon --ignore src --ignore public index.js",
     "watch:bundle": "watchify ./src/app.js -o ./public/js/bundle.js -dv",
     "watch:bundle2": "watch 'npm run build:bundle' src",
-    "browserSync": "npm run watch:bundle2 & browser-sync start --config bs-config.js"
+    "browserSync": "npm run watch:bundle2 & browser-sync start --config bs-config.js",
+    "version:major": "npm version major",
+    "version:minor": "npm version minor",
+    "version:patch": "npm run-script version:patch"
   },
   "author": "",
   "license": "ISC",
