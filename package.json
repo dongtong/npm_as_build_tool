@@ -1,6 +1,6 @@
 {
   "name": "npm_as_build_tool",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Use npm package as building tool in node application",
   "main": "index.js",
   "scripts": {
@@ -32,11 +32,14 @@
     "version:major": "npm version major -f",
     "version:minor": "npm version minor -f",
     "version:patch": "npm version patch -f",
+    "prepush:origin": "echo 'Push code to GitHub'",
     "push:origin": "git push --tags origin HEAD:master",
     "launch:prod": "open https://yourherokuurl.com",
     "launch:prod:windows": "start https://yourherokuurl.com",
     "push-to-cloud": "npm run push:origin",
     "deploy:prod": "npm run test:deploy -s && npm run build -s && npm run version:patch && npm run push-to-cloud",
+    "deploy:prod:time": "time(npm run deploy:prod)",
+    "deploy:prod:script": "bash ./deploy.sh",
     "test:deploy": "npm t -- -R dot"
   },
   "author": "",
