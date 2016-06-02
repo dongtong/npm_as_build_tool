@@ -35,7 +35,7 @@
     "push:origin": "git push --tags origin HEAD:master",
     "launch:prod": "open https://yourherokuurl.com",
     "launch:prod:windows": "start https://yourherokuurl.com",
-    "deploy:prod": "npm run test:deploy -s && npm run build -s",
+    "deploy:prod": "npm run test:deploy -s && npm run build -s && npm run version:patch",
     "test:deploy": "npm t -- -R dot"
   },
   "author": "",
